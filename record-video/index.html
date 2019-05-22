@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+
+      html {
+        width: 100%;
+        height: 100%;
+      }
+
+      body {
+        width: 100%;
+        height: 100%;
+      }
+
+      canvas {
+        display: block;
+        width: 1080px;
+        height: 720px;
+        margin: 0 auto;
+      }
+
+      .btns {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: space-around;
+      }
+
+      .btn {
+        background-color: #000;
+        color: #fff;
+        cursor: pointer;
+
+        width: 100px;
+        height: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas width="1280" height="720"></canvas>
+
+    <div class="btns">
+      <div class="btn play">play</div>
+
+      <div class="btn stop">stop</div>
+
+      <div class="btn download">download</div>
+    </div>
+
+    <script src="http://bbc.github.io/VideoContext/dist/videocontext.js"></script>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
